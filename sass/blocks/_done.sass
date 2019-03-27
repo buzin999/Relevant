@@ -1,0 +1,63 @@
+.done
+  padding: 71px 41px
+  &-item
+    display: flex
+    margin-bottom: 30px
+    padding: 24px 25px 32px 27px
+    box-shadow: 0 3px 8px rgba(83, 83, 83, 0.15)
+    background-color: #ffffff
+    &:last-child
+      margin-bottom: 0
+  &-wrap
+    flex-basis: 45%
+  &-title
+    display: flex
+    align-items: center
+    margin-bottom: 10px
+    padding-right: 10px
+    font-size: 20px
+    line-height: 24px
+  &-number
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-right: 34px
+    width: 65px
+    height: 65px
+    font-size: 30px
+    line-height: 30px
+    background-color: $primary
+    color: $text-color-white
+  &-text
+    padding-right: 43px
+    font-size: 18px
+    line-height: 30px
+  &-img
+    display: flex
+    padding-top: 36px
+    padding-bottom: 49px
+    align-items: center
+    justify-content: center
+    flex-basis: 55%
+    max-height: 520px
+    // max-width: 606px
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.16)
+  &__img
+    padding: 0
+  &-ul
+    padding: 0
+    padding-right: 19px
+    font-size: 18px
+  &-list
+    position: relative
+    margin-left: 30px
+    list-style: none
+    line-height: 28px
+    &::before
+      content: ''
+      position: absolute
+      top: 12px
+      left: -28px
+      width: 9px
+      height: 9px
+      background-color: $primary

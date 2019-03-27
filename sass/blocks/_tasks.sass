@@ -1,0 +1,47 @@
+.tasks
+  padding-top: 69px
+  padding-bottom: 79px
+  background-color: #fafafa
+  &-item
+    margin-bottom: 30px
+    padding: 32px 34px 41px 34px
+    background-color: #ffffff
+    box-shadow: 0 0 18px 2px #e4e4e4
+    &:last-child
+      margin-bottom: 0
+  &-title
+    display: flex
+    align-items: center
+    margin-bottom: 10px
+    font-size: 20px
+  &-img
+    margin-right: 11px
+  &-text
+    margin-bottom: 26px
+    font-size: 18px
+    line-height: 30px
+    max-width: 980px
+  &__text
+    margin: 0
+  &-ul
+    padding: 0
+    font-size: 18px
+  &-list
+    list-style: none
+    line-height: 30px
+    +bold
+    &-item
+      position: relative
+      margin-left: 20px
+      list-style: none
+      line-height: 34px
+      +reg
+      &::before
+        content: ''
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: -28px
+        width: 9px
+        height: 9px
+        background-color: $primary

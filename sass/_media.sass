@@ -1,0 +1,188 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+
+@media (max-width: 991px)
+  .container
+    max-width: 750px
+  
+  // Блок slider
+  .slider
+    &-block
+      margin-bottom: 30px
+      padding-top: 20px
+      padding-bottom: 35px
+    &-item
+      max-height: 560px
+      max-width: 96%
+      margin-bottom: 40px
+      &-bottom
+        max-height: 500px
+
+  // Блок done
+  .done
+    &-item
+      flex-direction: column
+    &-wrap
+      margin-bottom: 20px
+  
+@media (max-width: 768px)
+  .container
+    max-width: 100%
+    padding: 0 30px
+  .button
+    &-o
+      &:hover
+        background-color: transparent
+        color: $active
+        border: 3px solid $active
+        transition: 0
+  .section-title
+    margin-bottom: 20px
+    font-size: 24px
+  .text-bold
+    font-size: 18px
+
+
+  // Блок descr
+  .descr
+    padding-top: 30px
+    padding-bottom: 30px
+    &-block
+      text-align: center
+    &-text
+      text-align: justify
+      text-align-last: center
+      font-size: 16px
+      line-height: 28px
+
+  // Блок slider
+  .slider
+    padding: 30px 0
+    &__block
+      margin-top: 0
+    &-block
+      margin-bottom: 0
+      padding-top: 0
+      padding-bottom: 0
+      &__bottom
+        margin-bottom: 30px
+    &-item
+      max-width: 100%
+      max-height: 520px
+      &-bottom
+        max-height: 450px
+    &-title
+      margin-bottom: 20px
+      font-size: 20px
+    &-small
+      margin-top: 10px
+      padding: 0 5px
+      padding-bottom: 10px
+      font-size: 12px
+      line-height: 20px
+    &-button
+      margin-bottom: 20px
+  .dot
+    display: none
+  .arrow
+    &-left
+      top: -26px
+      background: url(../img/slider/left-arrow-active.png) center no-repeat
+  .arrow
+    &-right
+      top: -26px
+      background: url(../img/slider/right-arrow-active.png) center no-repeat
+  
+  // Блок tasks
+  .tasks
+    padding-top: 30px
+    padding-bottom: 30px
+    &-item
+      padding: 22px 24px 31px 24px
+    &-block
+      text-align: center
+    &-title
+      justify-content: center
+    &-text
+      text-align: justify
+      text-align-last: center
+      font-size: 16px
+      line-height: 28px
+    &-ul
+      font-size: 16px
+    &-list
+      text-align: center
+      line-height: 28px
+      &-item
+        text-align: left
+        line-height: 30px
+        &::before
+          top: 15px
+
+  // Блок done
+  .done
+    padding: 30px 0
+    &-block
+      text-align: center
+    &-title
+      flex-direction: column
+    &-number
+      margin-right: 0
+      margin-bottom: 10px
+    &-text
+      padding: 0
+      text-align: justify
+      text-align-last: center
+      font-size: 16px
+      line-height: 28px
+    &-ul
+      padding: 0
+    &-list
+      text-align: justify
+      font-size: 16px
+      line-height: 28px
+      &::before
+        top: 10px
+
+  // Блок result
+  .result
+    padding-top: 30px
+    padding-bottom: 30px
+    &-block
+      text-align: center
+    &-text
+      text-align: justify
+      text-align-last: center
+      font-size: 16px
+      line-height: 28px
+
+@media (max-width: 576px)
+  .container
+    max-width: 100%
+    padding: 0 15px
+
+  // Блок slider
+  .slider
+    &-item
+      max-width: 100%
+      max-height: 320px
+
+  // Блок tasks
+  .tasks
+    &-list
+      ul
+        padding: 10px
+
+  // Блок done
+  .done
+    &-item
+      padding: 20px 10px
+    &-img
+      padding: 0
+      box-shadow: none
+    &-list
+      margin-left: 10px
+      font-size: 14px
+      &::before
+        left: -14px

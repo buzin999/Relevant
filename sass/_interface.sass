@@ -1,0 +1,56 @@
+body
+  +reg
+  color: $text-color
+img
+  max-width: 100%
+p, h2
+  margin: 0
+.button
+  padding: 20px 37px
+  background-color: $active
+  color: $text-color-white
+  border: 3px solid transparent
+  +reg
+  &-o
+    background-color: transparent
+    color: $active
+    border: 3px solid $active
+    &:hover
+      cursor: pointer
+      background-color: $active
+      color: $text-color-white
+      border: 3px solid transparent
+      transition: 0.3s
+.section-title
+  display: inline-block
+  margin-bottom: 40px
+  padding: 14px 28px 12px 18px
+  background-color: #ffffff
+  +bold
+  font-size: 32px
+  border-left: 2px solid $primary
+  box-shadow: 0 0 27px rgba(200, 208, 212, 0.52)
+.text-bold
+  +bold
+.text-primary
+  color: $primary
+
+@keyframes fade
+  from
+     opacity: 0.1
+  to
+     opacity: 1
+.fade 
+  animation-name: fade
+  animation-duration: 2.5s
+
+@keyframes move
+  from
+    margin-bottom: 200px
+  to
+    margin-bottom: 0
+.animate
+  animation-name: move
+  animation-duration: 1s
+  animation-timing-function: ease-in-out
+  animation-delay: 0.3s

@@ -1,0 +1,83 @@
+.slider
+  background-color: #ffffff
+  padding: 20px 0
+  &__block
+    margin-top: -160px
+  &-block
+    margin-bottom: 59px
+    padding-top: 50px
+    padding-bottom: 65px
+    text-align: center
+    box-shadow: 0 0 27px rgba(200, 208, 212, 0.52)
+    border-radius: 6px
+    background-color: #ffffff
+    &__bottom
+      margin-top: -120px
+      margin-bottom: 53px
+      padding-bottom: 37px
+  &-item
+    display: flex
+    justify-content: center
+    max-width: 90%
+    max-height: 658px
+    overflow-y: hidden
+    margin: 0 auto
+    margin-bottom: 70px
+    &-bottom
+      max-height: 538px
+  &-dots 
+    position: relative
+    width: 90%
+    margin: 0 auto
+    display: flex
+    justify-content: center
+  &-small
+    display: block
+    margin-top: 37px
+    font-size: 14px
+    line-height: 30px
+    color: #9b9b9b
+  &-title
+    margin-bottom: 88px
+    text-align: center
+    +bold
+    font-size: 26px
+    line-height: 30px
+  &-button
+    display: block
+    margin: 0 auto
+    margin-bottom: 98px
+.dot 
+  cursor: pointer
+  width: 11px
+  height: 11px
+  margin: 0 10px
+  background-color: #bfbfbf
+  display: inline-block
+  transition: 0.6s
+  &-active 
+    background-color: $primary
+
+.arrow
+  &-left
+    position: absolute
+    cursor: pointer
+    top: -12px
+    left: 3%
+    width: 45px
+    height: 14px
+    background: url(../img/slider/left-arrow.png) center no-repeat
+    transition: 0.3s
+    &:hover 
+      background: url(../img/slider/left-arrow-active.png) center no-repeat
+  &-right
+    position: absolute
+    cursor: pointer
+    top: -12px
+    right: 3%
+    width: 45px
+    height: 14px
+    background: url(../img/slider/right-arrow.png) center no-repeat
+    transition: 0.3s
+    &:hover
+      background: url(../img/slider/right-arrow-active.png) center no-repeat
